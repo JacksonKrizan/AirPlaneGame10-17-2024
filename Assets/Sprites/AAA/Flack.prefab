@@ -265,4 +265,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
-  force: 10
+  force: 6

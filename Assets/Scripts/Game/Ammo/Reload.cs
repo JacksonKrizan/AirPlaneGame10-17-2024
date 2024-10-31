@@ -22,7 +22,7 @@ public class Reload : MonoBehaviour
         if (bulletCartridgeEnabled == true)
         {
             bulletCartridgeEnabled = false;
-            bulletCartridgeX = Random.Range(-8, 8);
+            bulletCartridgeX = Random.Range(-8, 0);
             bulletCartridgeY = 15;
             bulletCartridgeSpawn = new Vector2(bulletCartridgeX, bulletCartridgeY);
             Instantiate(bulletCartridge, bulletCartridgeSpawn, Quaternion.identity);

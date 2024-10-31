@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float RunSpeed;
     float score;
     public float health;
+    public float healthDeath;
     public float JumpForce;
     BomberPassed bomberAlert;
 
@@ -86,14 +87,13 @@ public class PlayerScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Bomber"))
         {
-            health -= 5;
+            health = healthDeath;
 
         }
 
         if (collision.gameObject.CompareTag("spike"))
         {
-             health -= 5;
-
+            health = healthDeath;
         }
         if(collision.gameObject.CompareTag("AAABullet"))
         {

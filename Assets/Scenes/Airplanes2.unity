@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 13137581}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4233141, y: -2.746265, z: 0}
+  m_LocalPosition: {x: 1.5233116, y: -0.34626245, z: 0}
   m_LocalScale: {x: 0.91238004, y: 0.91238004, z: 0.91238004}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1419,6 +1419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunSpeed: 50
   health: 0
+  healthDeath: 0
   JumpForce: 50
   DeathScreen: {fileID: 540174934}
   bomber: {fileID: 0}
@@ -1795,10 +1796,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -8176,7 +8177,7 @@ Transform:
   m_GameObject: {fileID: 810798159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2845693, y: -2.8283775, z: 0}
+  m_LocalPosition: {x: 3.3845668, y: -0.428375, z: 0}
   m_LocalScale: {x: 4.5619, y: 4.5619, z: 4.5619}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8347,6 +8348,7 @@ GameObject:
   - component: {fileID: 957839309}
   - component: {fileID: 957839308}
   - component: {fileID: 957839307}
+  - component: {fileID: 957839312}
   m_Layer: 12
   m_Name: P51 (1)
   m_TagString: Player
@@ -8367,7 +8369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunSpeed: 30
-  health: 5
+  health: 10
+  healthDeath: 0
   JumpForce: 30
   DeathScreen: {fileID: 540174934}
   bomber: {fileID: 1191197504}
@@ -8432,7 +8435,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.5, y: 2.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8642,7 +8645,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &957839311
 Transform:
   m_ObjectHideFlags: 0
@@ -8664,6 +8667,27 @@ Transform:
   - {fileID: 1278461627}
   m_Father: {fileID: 1467283398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &957839312
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957839306}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b49a3d7266774a2e922e8daa0b916f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1013240655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4540479497096423834, guid: a4c5cbfe9335a49689cc8cab2ccd04dd, type: 3}
@@ -13757,7 +13781,7 @@ Transform:
   m_GameObject: {fileID: 1084351676}
   serializedVersion: 2
   m_LocalRotation: {x: -0.08656892, y: -0.7017876, z: 0.7017876, w: 0.08656891}
-  m_LocalPosition: {x: 0.8393919, y: -3.5035398, z: 0}
+  m_LocalPosition: {x: 0.9393894, y: -1.1035373, z: 0}
   m_LocalScale: {x: 0.9123799, y: 0.91238004, z: 0.9123799}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18584,7 +18608,7 @@ Transform:
   m_GameObject: {fileID: 1116365312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.7408228, y: -2.892246, z: 0}
+  m_LocalPosition: {x: 1.8408203, y: -0.49224353, z: 0}
   m_LocalScale: {x: 0.9123804, y: 0.9123804, z: 0.91238004}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18674,6 +18698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunSpeed: 2.5
   health: 0
+  healthDeath: 0
   JumpForce: 4
   DeathScreen: {fileID: 0}
   bomber: {fileID: 0}
@@ -19052,7 +19077,7 @@ Transform:
   m_GameObject: {fileID: 1278461626}
   serializedVersion: 2
   m_LocalRotation: {x: -0.51011044, y: -0.48968086, z: 0.4896809, w: 0.51011044}
-  m_LocalPosition: {x: 3.2, y: -2.7, z: 0.2}
+  m_LocalPosition: {x: 3.2999976, y: -0.29999757, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24850,6 +24875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunSpeed: 30
   health: 0
+  healthDeath: 0
   JumpForce: 30
   DeathScreen: {fileID: 540174934}
   bomber: {fileID: 0}
@@ -25200,10 +25226,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -25405,10 +25431,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -25673,7 +25699,7 @@ MonoBehaviour:
   bulletSpeed: 10
   bulletSpawn: 1
   bulletSpawnStart: 1
-  bulletSpawnDelay: 0.7
+  bulletSpawnDelay: 1.5
   antiReload: 0
   AAAReload: 1
 --- !u!1 &1766180620
@@ -25817,11 +25843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540479497096423834, guid: a4c5cbfe9335a49689cc8cab2ccd04dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.63
+      value: 5.73
       objectReference: {fileID: 0}
     - target: {fileID: 4540479497096423834, guid: a4c5cbfe9335a49689cc8cab2ccd04dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4540479497096423834, guid: a4c5cbfe9335a49689cc8cab2ccd04dd, type: 3}
       propertyPath: m_LocalPosition.z
