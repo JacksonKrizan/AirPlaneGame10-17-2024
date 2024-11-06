@@ -75,7 +75,7 @@ public class PlayerScript : MonoBehaviour
                 ScoreTxt.text = "SCORE : " + score.ToString("F");
 
             }
-            if (bomberAlert.bomberAtBase >= 5)
+            if (bomberAlert.bomberAtBase >= 4)
             {
                 isAlive = false;
             }
