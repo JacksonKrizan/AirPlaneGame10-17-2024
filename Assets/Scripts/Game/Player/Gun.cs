@@ -28,8 +28,8 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        txtBullets.text = "Bulets : " + bulletCount.ToString("F");
-
+        //txtBullets.text = "Bulets : " + bulletCount.ToString("F");
+        txtBullets.text = bulletCount.ToString("F");
         if (ammo == true)
         {
             if (bulletSpawn == true)
