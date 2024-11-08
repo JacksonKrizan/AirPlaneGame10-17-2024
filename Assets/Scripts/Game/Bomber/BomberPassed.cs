@@ -17,7 +17,7 @@ public class BomberPassed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bomberMessage.text = "Bombers Passed : " + bomberAtBase.ToString("F");
+        bomberMessage.text = bomberAtBase.ToString("F0");
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
