@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 328687042694476229}
   - component: {fileID: 5960295411301443410}
   - component: {fileID: 8178279850865034908}
+<<<<<<< HEAD
   - component: {fileID: 5766889213588005105}
+=======
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_Layer: 10
   m_Name: GroundRocks
   m_TagString: spike
@@ -31,7 +34,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.08, y: -1.04, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 0.49060282, y: 0.49060282, z: 0.4906028}
+=======
+  m_LocalScale: {x: 0.4906028, y: 0.4906028, z: 0.4906028}
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,13 +83,22 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD
   m_SortingOrder: 6
+=======
+  m_SortingOrder: 0
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_Sprite: {fileID: 21300000, guid: 7af4a72253808455480a060e29f5d1f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+<<<<<<< HEAD
   m_DrawMode: 2
   m_Size: {x: 30, y: 9}
+=======
+  m_DrawMode: 0
+  m_Size: {x: 36, y: 9}
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -160,11 +176,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 0, y: 4.1501894}
+=======
+  m_Offset: {x: 0, y: 0}
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 36, y: 9}
+<<<<<<< HEAD
     newSize: {x: 30, y: 9}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -217,4 +238,13 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 9}
+=======
+    newSize: {x: 36, y: 9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 36, y: 9}
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
   m_EdgeRadius: 0

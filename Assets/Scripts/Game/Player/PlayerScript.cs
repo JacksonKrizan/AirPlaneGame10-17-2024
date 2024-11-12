@@ -26,8 +26,11 @@ public class PlayerScript : MonoBehaviour
     private void Start()
     {
         score = 0;
+<<<<<<< HEAD
         QualitySettings.vSyncCount = 1;
         Application.targetFrameRate = 60;
+=======
+>>>>>>> a607d6650281603edbf5a11b90faa4b34807935b
     }
 
     private void Awake()
