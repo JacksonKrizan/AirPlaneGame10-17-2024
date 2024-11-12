@@ -28,8 +28,9 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        txtBullets.text = "Bulets : " + bulletCount.ToString("F");
-
+        //txtBullets.text = "Bulets : " + bulletCount.ToString("F");
+        //txtBullets.text = bulletCount.ToString("F");
+        txtBullets.text = bulletCount.ToString("F0");
         if (ammo == true)
         {
             if (bulletSpawn == true)
@@ -41,7 +42,7 @@ public class Gun : MonoBehaviour
                     Light3.intensity = 2f;
 
                     var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-                    bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.up * bulletSpeed;
+                    bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
                     bulletSpawn = false;
                     bulletCount -= 1;
                     StartCoroutine(ShootBullets());
@@ -51,12 +52,12 @@ public class Gun : MonoBehaviour
 
         }
         
-        if (bulletCount == 0)
+        if (bulletCount <= 0)
         {
             ammo = false;
 
         }
-        if (bulletCount >= 0)
+        if (bulletCount >= 1)
         {
             ammo = true;
 

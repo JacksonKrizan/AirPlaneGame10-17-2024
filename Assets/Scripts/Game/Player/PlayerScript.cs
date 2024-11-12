@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float RunSpeed;
     float score;
     public float health;
+    public float healthDeath;
     public float JumpForce;
     BomberPassed bomberAlert;
 
@@ -25,6 +26,8 @@ public class PlayerScript : MonoBehaviour
     private void Start()
     {
         score = 0;
+        QualitySettings.vSyncCount = 1;
+        Application.targetFrameRate = 60;
     }
 
     private void Awake()
@@ -38,7 +41,7 @@ public class PlayerScript : MonoBehaviour
         {
            Debug.Log(bomberAlert.bomberAtBase);
 
-            HealthTxt.text = "Health : " + health.ToString("F");
+            HealthTxt.text = health.ToString("F0");
 
 
             if(Input.GetKey(KeyCode.W))
@@ -71,10 +74,10 @@ public class PlayerScript : MonoBehaviour
             if(isAlive)
             {
                 score += Time.deltaTime * 4;
-                ScoreTxt.text = "SCORE : " + score.ToString("F");
+                ScoreTxt.text = "SCORE " + score.ToString("F0");
 
             }
-            if (bomberAlert.bomberAtBase >= 5)
+            if (bomberAlert.bomberAtBase >= 4)
             {
                 isAlive = false;
             }
@@ -86,14 +89,13 @@ public class PlayerScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Bomber"))
         {
-            health -= 5;
+            health = healthDeath;
 
         }
 
         if (collision.gameObject.CompareTag("spike"))
         {
-             health -= 5;
-
+            health = healthDeath;
         }
         if(collision.gameObject.CompareTag("AAABullet"))
         {
